@@ -1,4 +1,4 @@
-import { 
+import {
   Hero,
   PopularProducts,
   SuperQuality,
@@ -6,8 +6,9 @@ import {
   SpecialOffer,
   CustomerReviews,
   Subscribe,
-  Footer } from './sections';
-import Nav from './components/Nav';
+  Footer,
+} from "./sections";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
       <section className="padding-x py-10">
         <Services />
       </section>
-        
+
       <section className="padding">
         <SpecialOffer />
       </section>
@@ -45,7 +46,7 @@ const App = () => {
         <Footer />
       </section>
     </main>
-  )
+  );
 };
 
 export default App;

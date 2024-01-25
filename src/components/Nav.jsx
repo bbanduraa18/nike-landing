@@ -13,11 +13,20 @@ const Nav = () => {
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
 
-        <div className="lg:hidden absolute right-16 top-8 cursor-pointer" onClick={() => setOpen(!open)}>
+        <div
+          className="lg:hidden absolute right-16 top-8 cursor-pointer"
+          onClick={() => setOpen(!open)}
+        >
           <img src={hamburger} alt="Hamburger" width={25} height={25} />
         </div>
 
-        <ul className={`flex-1 lg:flex justify-end items-center gap-16 lg:static absolute lg:w-auto w-full left-0 lg:pl-0 padding-x transition-all duration-500 ease-in ${open ? 'top-[95px] opacity-100' : 'top-[-270px] lg:opacity-100 opacity-0'}`}>
+        <ul
+          className={`flex-1 lg:flex justify-end items-center gap-16 lg:static absolute lg:w-auto w-full left-0 lg:pl-0 padding-x transition-all duration-500 ease-in ${
+            open
+              ? "top-[95px] opacity-100"
+              : "top-[-270px] lg:opacity-100 opacity-0"
+          }`}
+        >
           {navLinks.map((item) => (
             <li key={item.label} className="lg:my-0 my-8">
               <a
