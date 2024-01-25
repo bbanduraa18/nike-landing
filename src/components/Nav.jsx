@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <header className="padding-x py-8 absolute z-20 w-full">
-      <nav className="lg:flex justify-between items-center max-container">
+      <nav className="flex justify-between items-center max-container">
         <a href="/" className="block w-[130px] h-[30px]">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
@@ -21,7 +21,7 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`flex-1 lg:flex justify-end items-center gap-16 lg:static absolute bg-white lg:w-auto w-full left-0 lg:pl-0 padding-x transition-all duration-500 ease-in ${
+          className={`flex-1 lg:flex justify-end items-center gap-16 lg:static absolute max-lg:bg-white lg:w-auto w-full left-0 lg:pl-0 padding-x transition-all duration-500 ease-in ${
             open
               ? "top-[95px] opacity-100"
               : "top-[-270px] lg:opacity-100 opacity-0"
