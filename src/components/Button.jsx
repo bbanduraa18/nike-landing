@@ -5,6 +5,7 @@ const Button = ({
   backgroundColor,
   borderColor,
   textColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -12,7 +13,7 @@ const Button = ({
         backgroundColor
           ? `${backgroundColor} ${borderColor} ${textColor}`
           : "bg-coral-red border border-coral-red text-white"
-      }`}
+      } ${fullWidth && "w-full"}`}
     >
       {label}
 
